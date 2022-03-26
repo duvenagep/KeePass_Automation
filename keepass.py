@@ -10,7 +10,7 @@ WORKDIR = os.getcwd()
 if not os.path.isdir(os.path.join(os.getcwd(), OUTPUT)):
     os.makedirs(OUTPUT)
 
-
+ 
 # Step 1: Open & Log into KeePass
 app = Application(backend="uia").start("C:\Program Files (x86)\Pleasant Solutions\KeePass for Pleasant Password Server\KeePass.exe")  # nopep8
 app.window(title='Log in to Pleasant Password Server').type_keys("TEST_PASSWORD")

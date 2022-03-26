@@ -13,3 +13,4 @@ def GetWindowRectFromName(name: str) -> tuple:
     # print(hwnd)
     # print(rect)
     return (rect.left, rect.top, rect.right, rect.bottom)
+ 

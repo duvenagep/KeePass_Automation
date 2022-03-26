@@ -10,7 +10,7 @@ user32 = ctypes.WinDLL('user32', use_last_error=True)
 def check_zero(result, func, args):
     if not result:
         err = ctypes.get_last_error()
-        if err:
+        if err: 
             raise ctypes.WinError(err)
     return args
 
