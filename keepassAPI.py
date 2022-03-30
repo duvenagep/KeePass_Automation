@@ -53,7 +53,7 @@ class PPS:
         res = request.urlopen(req)
         return res
 
-def get_SID(self,data):
+def get_SID(data):
     service_name = re.findall('SERVICE_NAME\s=\s\w+.\w+.\w+',data)[0].replace("SERVICE_NAME = ","")
     host = re.findall('HOST\s=\s\w+.\w+.\w+',data)[0].replace("HOST = ","")
     print(service_name,host)
